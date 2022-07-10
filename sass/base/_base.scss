@@ -13,7 +13,17 @@ html {
 body {
   color: var(--color-grey);
 }
-.article {
+.container {
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 8rem auto 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 8rem;
+}
+
+aside {
+  grid-column: 2/3;
+}
+footer {
+  grid-column: 1/3;
 }
