@@ -1,144 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="a web page to practice HTML structure, syntax, and semantics anlong side with some css properties, and css layout techniques"
+    />
+    <title>HTML & CSS Magazine</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header" role="banner">
-      <h1 class="heading-primary">THE CODE MAGAZINE</h1>
-      <nav class="navigation" role="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">blog</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">challenges</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">flexbox</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">css grid</a>
-          </li>
-        </ul>
+    <!------------Header------------>
+    <header role="banner">
+      <h1>📔 The Code Magazine</h1>
+
+      <!------------Navigation------------>
+      <nav role="navigation">
+        <a href="#" target="_self" title="Blog Page">Blog</a>
+        <a href="#" target="_self" title="Challenges Page">Challenges</a>
+        <a href="#" target="_self" title="Flexbox Page">Flexbox</a>
+        <a href="#" target="_self" title="CSS Grid Page">CSS Grid</a>
       </nav>
     </header>
 
-    <div class="container">
-      <!-- Main Article -->
-      <main class="main" role="main">
-        <article class="article" role="article">
-          <header class="article__header" role="banner">
-            <h2 class="heading-secondary">
-              The Basic Language of the Web: HTML
-            </h2>
-            <div class="article__author-box">
-              <img
-                src="img/laura-jones.jpg"
-                alt="Laura Jones"
-                class="article__author-img"
-              />
-              <p class="article__author-text">
-                Posted by Laura Jones on Monday, June 21st 2027
-              </p>
-            </div>
-            <img src="img/post-img.jpg" alt="coding" class="article__image" />
-            <p class="article__paragraph">
-              All modern websites and web applications are built using three
-              fundamental technologies: HTML, CSS and JavaScript. These are the
-              languages of the web.
-            </p>
-            <p class="article__paragraph">
-              In this post, let's focus on HTML. We will learn what HTML is all
-              about, and why you too should learn it.
-            </p>
-          </header>
-          <div class="article__body">
-            <div class="article__sub-section">
-              <h3 class="heading-tertiary">What is HTML?</h3>
-              <p class="article__paragraph">
-                HTML stands for HyperText Markup Language. It's a markup
-                language that web developers use to structure and describe the
-                content of a webpage (not a programming language).
-              </p>
-              <p class="article__paragraph">
-                HTML consists of elements that describe different types of
-                content: paragraphs, links, headings, images, video, etc. Web
-                browsers understand HTML and render HTML code as websites.
-              </p>
-              <p class="article__paragraph">
-                In HTML, each element is made up of 3 parts:
-              </p>
-              <ol class="article__list">
-                <li class="article__item">The opening tag</li>
-                <li class="article__item">The closing tag</li>
-                <li class="article__item">The actual element</li>
-              </ol>
-              <p class="article__paragraph">
-                You can learn more at MDN Web Docs.
-              </p>
-            </div>
+    <!------------Main Content------------>
+    <main role="main">
+      <!------------Article------------>
+      <article role="article">
+        <!------------Article's Header------------>
+        <header role="banner">
+          <h2>The Basic Language of the Web: HTML</h2>
+          <img
+            src="img/laura-jones.jpg"
+            alt="laura jones headshot"
+            width="50"
+            height="50"
+          />
+          <p>Posted by <em>Laura Jones</em> on Monday, June 21st 2023</p>
+          <img
+            src="img/post-img.jpg"
+            alt="a laptop on a table"
+            width="500"
+            title="https://unsplash.com/s/photos/code"
+          />
+        </header>
 
-            <div class="article__sub-section">
-              <h3 class="heading-tertiary">Why should you learn HTML?</h3>
-              <p class="article__paragraph">
-                There are countless reasons for learning the fundamental
-                language of the web. Here are 5 of them:
-              </p>
-              <ol class="article__list">
-                <li class="article__item">To use web dev language</li>
-                <li class="article__item">To hand-craft beautiful websites</li>
-                <li class="article__item">To build web applications</li>
-                <li class="article__item">To impress friends</li>
-                <li class="article__item">To have fun 😃</li>
-              </ol>
-              <p class="article__paragraph">
-                Hopefully you learned something new here. See you next time!
-              </p>
-            </div>
-          </div>
-        </article>
-      </main>
+        <!------------Article's Body------------>
+        <div>
+          <p>
+            All modern websites and web applications are built using three
+            fundamental technologies: HTML, CSS and JavaScript. These are the
+            languages of the web.
+          </p>
+          <p>
+            In this post, let's focus on HTML. We will learn what HTML is all
+            about, and why you too should learn it.
+          </p>
 
-      <!-- More articles -->
-      <aside role="complementary" class="sidebar">
-        <h2 class="heading-tertiary">related posts</h2>
-        <figure class="post">
+          <h3>What is HTML?</h3>
+          <p>
+            HTML stands for HyperText Markup Language. It's a markup language
+            that web developers use to structure and describe the content of a
+            webpage (not a programming language).
+          </p>
+          <p>
+            HTML consists of elements that describe different types of content:
+            paragraphs, links, headings, images, video, etc. Web browsers
+            understand HTML and render HTML code as websites.
+          </p>
+          <p>In HTML, each element is made up of 3 parts:</p>
+          <ul>
+            <li>The opening tag</li>
+            <li>The closing tag</li>
+            <li>The actual element</li>
+          </ul>
+          <p>
+            You can learn more at
+            <a href="#" target="_blank" rel="external">MDN Web Docs</a>.
+          </p>
+
+          <h3>Why should you learn HTML?</h3>
+          <p>
+            There are countless reasons for learning the fundamental language of
+            the web. Here are 5 of them:
+          </p>
+          <ul>
+            <li>To be able to use the fundamental web dev language</li>
+            <li>
+              To hand-craft beautiful websites instead of relying on tools like
+              Worpress or Wix
+            </li>
+            <li>To build web applications</li>
+            <li>To impress friends To have fun</li>
+          </ul>
+          <p>Hopefully you learned something new here. See you next time!</p>
+        </div>
+      </article>
+    </main>
+
+    <!------------Aside Content [Related Posts]------------>
+    <aside role="complementary">
+      <h2>Related Posts</h2>
+      <ul>
+        <li>
           <img
             src="img/related-1.jpg"
-            alt="someone is coding"
-            class="post__image"
+            alt="a computer on a desk"
+            title="https://unsplash.com/s/photos/code"
+            width="80"
           />
-          <figcaption class="post__text-box">
-            <a href="#" class="post__heading">How to Learn Web Development</a>
-            <p class="post__author">By Jonas Schmedtmann</p>
-          </figcaption>
-        </figure>
-        <figure class="post">
-          <img src="img/related-2.jpg" alt="lightning" class="post__image" />
-          <figcaption class="post__text-box">
-            <a href="#" class="post__heading">The Unknown Powers of CSS</a>
-            <p class="post__author">By Jim Dillon</p>
-          </figcaption>
-        </figure>
-        <figure class="post">
-          <img src="img/related-3.jpg" alt="html code" class="post__image" />
-          <figcaption class="post__text-box">
-            <a href="#" class="post__heading">Why JavaScript is Awesome</a>
-            <p class="post__author">By Matilda</p>
-          </figcaption>
-        </figure>
-      </aside>
-      <!-- Footer -->
-      <footer class="footer">
-        <p class="footer__copyright">Copyright © 2022 by The Code Magazine.</p>
-        <a href="#" class="footer__like">🤍 Like</a>
-      </footer>
-    </div>
+          <a
+            href="#"
+            target="_blank"
+            title="How to Learn Web Development article"
+            >How to Learn Web Development</a
+          >
+          <p>By James Web</p>
+        </li>
+        <li>
+          <img
+            src="img/related-2.jpg"
+            alt="a laptop on a desk"
+            title="https://unsplash.com/s/photos/code"
+            width="80"
+          />
+          <a href="#" target="_blank" title="The Unknown Powers of CSS Article"
+            >The Unknown Powers of CSS</a
+          >
+          <p>By Jim Dillon</p>
+        </li>
+        <li>
+          <img
+            src="img/related-3.jpg"
+            alt="a laptop and a plant on a desk"
+            title="https://unsplash.com/s/photos/code"
+            width="80"
+          />
+          <a href="#" target="_blank" title="Why JavaScript is Awesome Article"
+            >Why JavaScript is Awesome</a
+          >
+          <p>By Matilda Johnny</p>
+        </li>
+      </ul>
+    </aside>
+
+    <!------------Footer [Copyrights]------------>
+    <footer role="contentinfo">
+      <p>
+        &copy; Copyright 2023 by
+        <a
+          href="https://github.com/abanoubMokhles"
+          target="_blank"
+          title="Abanoub Mokhles's Github account"
+          rel="external"
+          >Abanoub Mokhles</a
+        >.
+      </p>
+    </footer>
   </body>
 </html>
