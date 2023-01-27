@@ -30,7 +30,7 @@ The Code Magazine is a webpage to practice HTML and CSS using Sematics, Floats, 
 - CSS3
 - Floats (main branch)
 - Flexbox (flexGrid branch)
-- CSS Grid
+- CSS Grid (flexGrid branch)
 - BEM Methodology
 - Desktop-first workflow
 
